@@ -16,5 +16,3 @@ Java based appium/selenium automation framework using appium, selenium , TestNG 
 7) Compare the product name and price displayed on the product detail page is the same as displayed in
 previous step6.
 8) Add 2 quantity of the product to cart
-9) Click on Checkout Now
-10) Now remove the product from the basket and click on “Start Shopping”
