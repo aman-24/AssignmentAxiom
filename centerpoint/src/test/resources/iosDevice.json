@@ -1,0 +1,12 @@
+[
+  {
+    "name": "iphone12promax",
+    "deviceName": "iPhone 12 PRO MAX",
+    "platformName": "iOS",
+    "platformVersion": "12.4",
+    "automationName": "XCuiTest",
+    "udid": "",
+    "reset": false,
+    "app": ""
+  }
+]

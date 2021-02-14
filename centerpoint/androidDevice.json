@@ -1,0 +1,13 @@
+[
+	{
+		"name": "Nexus",
+		"automationName": "UIAutomator2",
+		"deviceName": "emulator-5554",
+		"platformName": "Android",
+		"platformVersion": "11",
+		"packageName": "com.landmarkgroup.centrepointstores",
+		"activity": "com.landmarkgroupreactapps.MainActivity",
+		"reset": false,
+		"app": "Centrepoint.apk"
+	}
+]
