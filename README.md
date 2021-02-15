@@ -5,7 +5,9 @@ Java based appium/selenium automation framework using appium, selenium , TestNG 
 
 1.  Install **Maven** and impot maven project into your intellij or eclipse.
 2.  Install allure and testng plugins to the IDE you are using. 
-3.  Run TestNG.xml file under src/test/rresource, or run mvn test command.
+3.  Install appium using npm command : npm install -g appium.
+4.  Run TestNG.xml file under src/test/rresource, or run mvn test command.
+
 
 # Problem Statement:
 1) Download the Centrepoint app from Playstore
