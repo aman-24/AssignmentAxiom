@@ -7,7 +7,7 @@ Java based appium/selenium automation framework using appium, selenium , TestNG 
 2.  Install allure and testng plugins to the IDE you are using. 
 3.  Run TestNG.xml file under src/test/rresource, or run mvn test command.
 
-# Steps to follow:
+# Problem Statement:
 1) Download the Centrepoint app from Playstore
 2) Write a code to launch the application using Appium on an emulator
 3) On the home page, click the title “Departments”
