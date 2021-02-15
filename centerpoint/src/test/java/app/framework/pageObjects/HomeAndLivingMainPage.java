@@ -30,7 +30,7 @@ public class HomeAndLivingMainPage {
 	}
 
 	@Step
-	public void selectForniture() {
+	public void scrollAndSelectForniture() {
 
 		wait.until(ExpectedConditions.presenceOfElementLocated(banner));
 

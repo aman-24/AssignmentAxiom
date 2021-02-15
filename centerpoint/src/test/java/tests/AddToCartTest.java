@@ -7,6 +7,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import app.framework.enums.Countries;
+import app.framework.pageObjects.CartPage;
 import app.framework.pageObjects.HomeAndLivingMainPage;
 import app.framework.pageObjects.HomeScreen;
 import app.framework.pageObjects.ItemCatalogePage;
@@ -25,18 +26,26 @@ public class AddToCartTest extends BaseTest{
 		seleCatpage.selectHomeAndLivingCat(); 
 		
 		HomeAndLivingMainPage homeMain = new HomeAndLivingMainPage(driver);
-		homeMain.selectForniture();
+		homeMain.scrollAndSelectForniture();
 		
 		ItemCatalogePage itemCatPage = new ItemCatalogePage(driver);
 		String[] itemAtCatPage = itemCatPage.getDetailsAndSelectItemByIndex(1);
 		
 		ItemDetailsPage detailsPage = new ItemDetailsPage(driver);
 		String[] itemAtDetailsPage = detailsPage.getDetailsAndClickToBasket();
-		detailsPage.clickContinueShopping();
-		detailsPage.getDetailsAndClickToBasket();
 		
 		Assert.assertTrue(Arrays.equals(itemAtCatPage, itemAtDetailsPage) );
 		
+		CartPage cartPage = new CartPage(driver);
+		cartPage.clickContinueShopping();
+		
+		detailsPage = new ItemDetailsPage(driver);
+		detailsPage.getDetailsAndClickToBasket();
+		
+		cartPage = new CartPage(driver);
+		cartPage.clickCheckout();
+		cartPage.removeItemFromCartByIndex(1);
+		cartPage.removeItemFromCartByIndex(2); 
 	}
 	
 
